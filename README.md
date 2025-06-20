@@ -330,7 +330,14 @@ Akses melalui browser atau Postman:
 
 http://localhost:8080/pasien
 
+![Screenshot 2025-06-20 140505](https://github.com/user-attachments/assets/3f9ce165-bd1f-4b2a-918a-13610e15a849)
+
+
 http://localhost:8080/obat
+
+![Screenshot 2025-06-20 140448](https://github.com/user-attachments/assets/31c02446-2c08-4a5f-a03e-039bc6182a43)
+
+
 
 # Pengujian dengan Postman
 
@@ -380,4 +387,5 @@ Gunakan body JSON saat POST dan PUT. Contoh:
   "jenis_kelamin": "P"
 }
 ```
-
+## 👨‍💻 Dibuat oleh
+Eka Adit Prasetyo, Praktikum Pemrograman Berbasis Framework – Genap 2024/2025 Politeknik Negeri Cilacap
