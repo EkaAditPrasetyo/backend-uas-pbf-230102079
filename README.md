@@ -317,4 +317,67 @@ CREATE TABLE obat (
           protected $useTimestamps = false;
       }
      ```
+# Menjalankan Server
+
+- Pada terminal VSCode ketik berikut :
+  
+``` sh
+php spark serve
+```
+Kemudian memunculkan link yang diakses pada browser: http://localhost:8080
+
+Akses melalui browser atau Postman:
+
+http://localhost:8080/pasien
+
+http://localhost:8080/obat
+
+# Pengujian dengan Postman
+
+- Membuat Collection Postman:
+
+Nama: uas_pasien dan uas_obat
+
+Tambahkan endpoint:
+### 📚 Daftar Endpoint Obat
+
+| Method | Endpoint       | Deskripsi               |
+|--------|----------------|--------------------------|
+| GET    | `/obat`        | Ambil semua data obat    |
+| GET    | `/obat/{id}`   | Ambil detail obat tertentu |
+| POST   | `/obat`        | Tambah data obat         |
+| PUT    | `/obat/{id}`   | Ubah data obat tertentu  |
+| DELETE | `/obat/{id}`   | Hapus data obat tertentu |
+
+Gunakan body JSON saat POST dan PUT. Contoh:
+
+``` sh
+{
+  "nama_obat": "Bodrek",
+  "kategori": "pil",
+  "stok": 30,
+  "harga": "120000"
+}
+```
+
+### 📚 Daftar Endpoint Pasien
+
+| Method | Endpoint         | Deskripsi                   |
+|--------|------------------|------------------------------|
+| GET    | `/pasien`        | Ambil semua data pasien      |
+| GET    | `/pasien/{id}`   | Ambil detail pasien tertentu |
+| POST   | `/pasien`        | Tambah pasien baru           |
+| PUT    | `/pasien/{id}`   | Ubah data pasien             |
+| DELETE | `/pasien/{id}`   | Hapus data pasien            |
+
+Gunakan body JSON saat POST dan PUT. Contoh:
+
+``` sh
+{
+  "nama": "Siti Aisyah",
+  "alamat": "Jl. Mawar No. 10",
+  "tanggal_lahir": "1995-05-12",
+  "jenis_kelamin": "P"
+}
+```
 
